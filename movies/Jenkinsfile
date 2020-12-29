@@ -89,7 +89,7 @@ pipeline {
                     '''
                         
                 // TODO: Expose the ${APP_NAME} service for external access
-                       oc expose svc/${APP_NAME}
+                sh "oc expose svc/${APP_NAME}"
             }
         }
 
